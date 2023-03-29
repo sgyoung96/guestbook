@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import guestbook.GuestBookService;
+import guestbook.GuestBookVo;
+
 /**
  * Servlet implementation class AddList
  */
@@ -41,7 +44,21 @@ public class AddList extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		// doGet(request, response);
+		
+		//폼파라메터에 입력된 상품정보 읽어와서 db에 저장
+		//완료후 화면 이동
+		request.setCharacterEncoding("euc-kr");
+		response.setCharacterEncoding("euc-kr");
+		
+		String writer = request.getParameter("writer");
+		String pwd = request.getParameter("pwd");
+		String content = request.getParameter("content");
+
+		GuestBookService service = new GuestBookService();
+		service.addContent(new GuestBookVo(0, writer, "", pwd, content, 0));
+		
+		response.sendRedirect("/guestbook/list");
 	}
 
 }

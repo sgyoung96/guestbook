@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +35,15 @@
 				<th>조회수</th>
 				<th>상세</th>
 			</tr>
+			<c:forEach var="vo" items="${list}">
+				<tr>
+					<td align="center">${vo.num}</td>
+					<td align="center">${vo.writer}</td>
+					<td align="center">${vo.w_date}</td>
+					<td align="center">${vo.cnt}</td>
+					<td><input type="button" value="보기" style="background: #eeeee;" readonly></td>
+				</tr>
+			</c:forEach>
 		</table>
 	</form>
 </body>

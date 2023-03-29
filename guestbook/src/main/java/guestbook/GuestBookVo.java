@@ -18,31 +18,31 @@ CREATE SEQUENCE SEQ_GUESTBOOK;
 
 */
 public class GuestBookVo {
-	private double num;
+	private int num;
 	private String writer;
 	private String w_date;
 	private String pwd;
 	private String content;
-	private double number;
+	private int cnt;
 	
 	public GuestBookVo() {
 		super();
 	}
 	
-	public GuestBookVo(double num, String writer, String w_date, String pwd, String content, double number) {
+	public GuestBookVo(int num, String writer, String w_date, String pwd, String content, int cnt) {
 		super();
 		this.num = num;
 		this.writer = writer;
 		this.w_date = w_date;
 		this.pwd = pwd;
 		this.content = content;
-		this.number = number;
+		this.cnt = cnt;
 	}
 	
-	public double getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(double num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getWriter() {
@@ -69,16 +69,16 @@ public class GuestBookVo {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public double getNumber() {
-		return number;
+	public int getCnt() {
+		return cnt;
 	}
-	public void setNumber(double number) {
-		this.number = number;
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
 	}
 	
 	@Override
 	public String toString() {
 		return "GuestBookVo [num=" + num + ", writer=" + writer + ", w_date=" + w_date + ", pwd=" + pwd + ", content="
-				+ content + ", number=" + number + "]";
+				+ content + ", cnt=" + cnt + "]";
 	}
 }
