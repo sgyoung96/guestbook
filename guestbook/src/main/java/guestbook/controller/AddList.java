@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MainList
+ * Servlet implementation class AddList
  */
-@WebServlet("/guestbook/list")
-public class MainList extends HttpServlet {
+@WebServlet("/guestbook/add")
+public class AddList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MainList() {
+    public AddList() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,7 +32,7 @@ public class MainList extends HttpServlet {
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		/* 화면 이동시 사용하는 코드 */
-		RequestDispatcher dis = request.getRequestDispatcher("/guestbook/list.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("/guestbook/add.jsp");
 		dis.forward(request, response);
 	}
 
@@ -41,10 +41,7 @@ public class MainList extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// doGet(request, response);
-		
-		RequestDispatcher dis = request.getRequestDispatcher("/guestbook/add.jsp");
-		dis.forward(request, response);
+		doGet(request, response);
 	}
 
 }

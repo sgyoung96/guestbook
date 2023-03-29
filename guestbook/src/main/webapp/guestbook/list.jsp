@@ -1,12 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>ë°©ëª…ë¡</title>
+<meta charset="EUC-KR">
+<title>¹æ¸í·Ï > ¸ÞÀÎ</title>
 </head>
 <body>
-	Test!!!
+	<h3>ÀüÃ¼ ¸ñ·Ï</h3>
+	<form action="/add" method="post" name="main">
+		<table border="1">
+			<tr>
+				<th>
+					°Ë»ö
+				</th>
+				<td>
+					±Û¹øÈ£ <input type="text">
+				</td>
+				<td>
+					ÀÛ¼ºÀÚ <input type="text">
+				</td>
+				<td>
+					<input type="button" value="°Ë»ö">
+				</td>
+				<td>
+					<input type="button" value="¾²±â" onclick="javascript:location.href='/guestbook/add'">
+				</td>
+			</tr>
+			<tr>
+				<th>±Û¹øÈ£</th>
+				<th>ÀÛ¼ºÀÚ</th>
+				<th>ÀÛ¼ºÀÏ</th>
+				<th>Á¶È¸¼ö</th>
+				<th>»ó¼¼</th>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
+
+<%-- <input type="button"  value="»èÁ¦" onclick="javascript:location.href='/webApp2/product/del?num=${vo.num}'" ></td></tr> --%>

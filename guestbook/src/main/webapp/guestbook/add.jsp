@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>방명록 > 상세</title>
+<title>방명록 > 쓰기</title>
 </head>
 <body>
-
+	WRITE
 </body>
 </html>
