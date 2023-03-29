@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>전체 목록</h3>
-	<form action="/add" method="post" name="main">
+	<form action="/list" method="get" name="main">
 		<table border="1">
 			<tr>
 				<th>
