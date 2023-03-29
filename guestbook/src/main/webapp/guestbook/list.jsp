@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>방명록</title>
 </head>
 <body>
-
+	Test!!!
 </body>
 </html>
