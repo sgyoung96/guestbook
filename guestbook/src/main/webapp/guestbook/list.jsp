@@ -41,7 +41,15 @@
 					<td align="center">${vo.writer}</td>
 					<td align="center">${vo.w_date}</td>
 					<td align="center">${vo.cnt}</td>
-					<td><input type="button" value="보기" style="background: #eeeee;" readonly></td>
+					<td><input type="button" value="수정" style="background: #eeeee;" readonly></td>
+				</tr>
+				<tr>
+					<td>
+						<div align="center">내용</div>	
+					</td>
+					<td colspan="4">
+						<input type="text" style="background: #eeeeee; width: 98%;" value="${vo.content}" readonly>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

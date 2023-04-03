@@ -12,12 +12,12 @@
 		<table border="1">
 			<tr>
 				<td colspan="3">
-					<input type="text" placeholder="작성자명" maxlength="10" style="width: 98%" name="writer">
+					<input type="text" placeholder="작성자명" maxlength="5" style="width: 98%" name="writer">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="3">
-					<textarea placeholder="내용 작성" maxlength="50" rows="5" style="width: 98%" name="content"></textarea>
+					<textarea placeholder="내용 작성" maxlength="20" rows="5" style="width: 98%" name="content"></textarea>
 				</td>
 			</tr>
 			<tr>
